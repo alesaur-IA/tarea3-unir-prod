@@ -1,0 +1,398 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cien Años de Soledad",
+    "autor": "Gabriel García Márquez",
+    "anio_publicacion": 1967,
+    "isbn13": "9780307474728",
+    "imagen_portada": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=600&fit=crop",
+    "sinopsis": "La obra maestra de Gabriel García Márquez narra la historia de la familia Buendía a lo largo de siete generaciones en el pueblo ficticio de Macondo.",
+    "categoria": "Realismo Mágico",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "Ana García",
+        "puntuacion": 5,
+        "comentario": "Una obra maestra absoluta. La narrativa de García Márquez es hipnotizante y la historia de los Buendía se queda contigo para siempre.",
+        "fecha": "2025-11-15"
+      },
+      {
+        "usuario": "Carlos Mendoza",
+        "puntuacion": 5,
+        "comentario": "El realismo mágico en su máxima expresión. Cada página es poesía pura.",
+        "fecha": "2025-10-22"
+      },
+      {
+        "usuario": "María López",
+        "puntuacion": 4,
+        "comentario": "Magnífico pero denso. Requiere concentración pero vale totalmente la pena.",
+        "fecha": "2025-09-08"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes",
+    "anio_publicacion": 1605,
+    "isbn13": "9788491050643",
+    "imagen_portada": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=600&fit=crop",
+    "sinopsis": "Las aventuras de un hidalgo pobre que, de tanto leer novelas de caballería, enloquece y decide convertirse en caballero andante.",
+    "categoria": "Clásico",
+    "estado": "ALQUILADO",
+    "fecha_devolucion": "2025-12-05",
+    "criticas": [
+      {
+        "usuario": "Pedro Sánchez",
+        "puntuacion": 5,
+        "comentario": "La obra cumbre de la literatura española. Divertida, profunda y atemporal.",
+        "fecha": "2025-11-20"
+      },
+      {
+        "usuario": "Laura Martín",
+        "puntuacion": 4,
+        "comentario": "Un clásico imprescindible, aunque la lectura puede resultar lenta al principio.",
+        "fecha": "2025-10-15"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "anio_publicacion": 1949,
+    "isbn13": "9780451524935",
+    "imagen_portada": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400&h=600&fit=crop",
+    "sinopsis": "Una distopía que presenta un futuro totalitario donde el Gran Hermano controla cada aspecto de la vida y la verdad histórica.",
+    "categoria": "Ciencia Ficción",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "Javier Ruiz",
+        "puntuacion": 5,
+        "comentario": "Perturbadoramente relevante hoy en día. Una lectura obligatoria.",
+        "fecha": "2025-11-28"
+      },
+      {
+        "usuario": "Isabel Torres",
+        "puntuacion": 5,
+        "comentario": "Escalofriante y brillante. Orwell fue un visionario.",
+        "fecha": "2025-11-10"
+      },
+      {
+        "usuario": "Miguel Ángel",
+        "puntuacion": 4,
+        "comentario": "Excelente distopía, aunque algo deprimente. Muy recomendable.",
+        "fecha": "2025-10-05"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "El Principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "anio_publicacion": 1943,
+    "isbn13": "9780156012195",
+    "imagen_portada": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=600&fit=crop",
+    "sinopsis": "Un cuento poético sobre un pequeño príncipe que viaja de planeta en planeta aprendiendo sobre el amor y la amistad.",
+    "categoria": "Infantil",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "Sofía Ramírez",
+        "puntuacion": 5,
+        "comentario": "Un libro hermoso que todos deberíamos leer, sin importar la edad. Profundo y conmovedor.",
+        "fecha": "2025-11-25"
+      },
+      {
+        "usuario": "Roberto Díaz",
+        "puntuacion": 5,
+        "comentario": "Cada vez que lo releo descubro nuevas lecciones. Simplemente perfecto.",
+        "fecha": "2025-10-18"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "Orgullo y Prejuicio",
+    "autor": "Jane Austen",
+    "anio_publicacion": 1813,
+    "isbn13": "9780141439518",
+    "imagen_portada": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=400&h=600&fit=crop",
+    "sinopsis": "La historia de Elizabeth Bennet y su relación con el rico y orgulloso Mr. Darcy. Una crítica social y romance clásico.",
+    "categoria": "Romance",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "Elena Vargas",
+        "puntuacion": 5,
+        "comentario": "El mejor romance clásico jamás escrito. Los personajes son increíblemente bien desarrollados.",
+        "fecha": "2025-11-18"
+      },
+      {
+        "usuario": "Francisco Molina",
+        "puntuacion": 4,
+        "comentario": "Brillante crítica social envuelta en una historia romántica cautivadora.",
+        "fecha": "2025-10-30"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "titulo": "El Código Da Vinci",
+    "autor": "Dan Brown",
+    "anio_publicacion": 2003,
+    "isbn13": "9780307474278",
+    "imagen_portada": "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=400&h=600&fit=crop",
+    "sinopsis": "Robert Langdon debe resolver un misterioso asesinato en el Louvre que lo lleva a descubrir secretos ocultos en las obras de Leonardo da Vinci.",
+    "categoria": "Misterio",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null
+  },
+  {
+    "id": 7,
+    "titulo": "El Resplandor",
+    "autor": "Stephen King",
+    "anio_publicacion": 1977,
+    "isbn13": "9780307743657",
+    "imagen_portada": "https://images.unsplash.com/photo-1621360841013-c768371e93cf?w=400&h=600&fit=crop",
+    "sinopsis": "Jack Torrance acepta un trabajo como cuidador de invierno en el hotel Overlook, donde fuerzas sobrenaturales comienzan a afectarlo.",
+    "categoria": "Terror",
+    "estado": "ALQUILADO",
+    "fecha_devolucion": "2025-11-28"
+  },
+  {
+    "id": 8,
+    "titulo": "La Sombra del Viento",
+    "autor": "Carlos Ruiz Zafón",
+    "anio_publicacion": 2001,
+    "isbn13": "9788408043645",
+    "imagen_portada": "https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=400&h=600&fit=crop",
+    "sinopsis": "En la Barcelona de 1945, un joven es conducido al Cementerio de los Libros Olvidados y encuentra un libro maldito que cambiará su vida.",
+    "categoria": "Misterio",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null
+  },
+  {
+    "id": 9,
+    "titulo": "Sapiens: De animales a dioses",
+    "autor": "Yuval Noah Harari",
+    "anio_publicacion": 2011,
+    "isbn13": "9780062316097",
+    "imagen_portada": "https://images.unsplash.com/photo-1589998059171-988d887df646?w=400&h=600&fit=crop",
+    "sinopsis": "Una exploración de cómo el Homo sapiens llegó a dominar el mundo a través de tres revoluciones: la cognitiva, la agrícola y la científica.",
+    "categoria": "Historia",
+    "estado": "ALQUILADO",
+    "fecha_devolucion": "2025-11-30"
+  },
+  {
+    "id": 10,
+    "titulo": "Hábitos Atómicos",
+    "autor": "James Clear",
+    "anio_publicacion": 2018,
+    "isbn13": "9780735211292",
+    "imagen_portada": "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=400&h=600&fit=crop",
+    "sinopsis": "Un marco probado para mejorar cada día un 1%. Revela estrategias prácticas para formar buenos hábitos y romper los malos.",
+    "categoria": "Autoayuda",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null
+  },
+  {
+    "id": 11,
+    "titulo": "Clean Code",
+    "autor": "Robert C. Martin",
+    "anio_publicacion": 2008,
+    "isbn13": "9780132350884",
+    "imagen_portada": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400&h=600&fit=crop",
+    "sinopsis": "Un manual de estilo de desarrollo ágil de software. Lectura obligatoria para cualquier desarrollador que quiera escribir código profesional.",
+    "categoria": "Tecnología",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "Raúl Navarro",
+        "puntuacion": 5,
+        "comentario": "Imprescindible para cualquier desarrollador. Me hizo replantear mi forma de programar.",
+        "fecha": "2025-11-17"
+      },
+      {
+        "usuario": "Beatriz Castro",
+        "puntuacion": 5,
+        "comentario": "Los principios enseñados aquí mejoraron drásticamente la calidad de mi código.",
+        "fecha": "2025-10-20"
+      },
+      {
+        "usuario": "Tomás Vega",
+        "puntuacion": 4,
+        "comentario": "Excelente contenido, aunque algunos ejemplos en Java pueden parecer anticuados.",
+        "fecha": "2025-09-15"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "titulo": "El Hobbit",
+    "autor": "J.R.R. Tolkien",
+    "anio_publicacion": 1937,
+    "isbn13": "9780547928227",
+    "imagen_portada": "https://images.unsplash.com/photo-1629196914168-3a9644338cf5?w=400&h=600&fit=crop",
+    "sinopsis": "Bilbo Bolsón es un hobbit que disfruta de una vida cómoda y sin ambiciones, hasta que es arrastrado a una aventura épica para recuperar un tesoro.",
+    "categoria": "Fantasía",
+    "estado": "ALQUILADO",
+    "fecha_devolucion": "2026-01-10"
+  },
+  {
+    "id": 13,
+    "titulo": "Dune",
+    "autor": "Frank Herbert",
+    "anio_publicacion": 1965,
+    "isbn13": "9780441013593",
+    "imagen_portada": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=400&h=600&fit=crop",
+    "sinopsis": "En el planeta desértico Arrakis, Paul Atreides debe liderar una rebelión para recuperar el control sobre la especia, la sustancia más valiosa del universo.",
+    "categoria": "Ciencia Ficción",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null,
+    "criticas": [
+      {
+        "usuario": "David Castro",
+        "puntuacion": 5,
+        "comentario": "La mejor obra de ciencia ficción jamás escrita. Compleja, fascinante y visionaria.",
+        "fecha": "2025-11-22"
+      },
+      {
+        "usuario": "Patricia Jiménez",
+        "puntuacion": 5,
+        "comentario": "Un universo increíblemente detallado. La profundidad política y ecológica es impresionante.",
+        "fecha": "2025-11-05"
+      },
+      {
+        "usuario": "Alberto Fernández",
+        "puntuacion": 4,
+        "comentario": "Obra maestra, aunque requiere paciencia para sumergirse en su mundo complejo.",
+        "fecha": "2025-10-12"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "titulo": "Harry Potter y la Piedra Filosofal",
+    "autor": "J.K. Rowling",
+    "anio_publicacion": 1997,
+    "isbn13": "9788478884452",
+    "imagen_portada": "https://images.unsplash.com/photo-1618666012174-83b441c0bc76?w=400&h=600&fit=crop",
+    "sinopsis": "Un niño huérfano descubre que es un mago y entra en la escuela de magia Hogwarts, donde comienza su leyenda.",
+    "categoria": "Fantasía",
+    "estado": "ALQUILADO",
+    "fecha_devolucion": "2025-12-15",
+    "criticas": [
+      {
+        "usuario": "Carmen Herrera",
+        "puntuacion": 5,
+        "comentario": "Mágico en todos los sentidos. Un inicio perfecto para una saga inolvidable.",
+        "fecha": "2025-11-30"
+      },
+      {
+        "usuario": "Daniel Ortiz",
+        "puntuacion": 5,
+        "comentario": "Me enamoré del mundo mágico desde la primera página. Para todas las edades.",
+        "fecha": "2025-11-12"
+      },
+      {
+        "usuario": "Natalia Romero",
+        "puntuacion": 5,
+        "comentario": "Una aventura maravillosa que despierta la imaginación. Simplemente genial.",
+        "fecha": "2025-10-28"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "titulo": "Juego de Tronos",
+    "autor": "George R.R. Martin",
+    "anio_publicacion": 1996,
+    "isbn13": "9780553103540",
+    "imagen_portada": "https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?w=400&h=600&fit=crop",
+    "sinopsis": "En una tierra donde los veranos duran décadas y los inviernos pueden durar una vida, las grandes casas nobles luchan por el Trono de Hierro.",
+    "categoria": "Fantasía",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null
+  },
+  {
+    "id": 16,
+    "titulo": "Drácula",
+    "autor": "Bram Stoker",
+    "anio_publicacion": 1897,
+    "isbn13": "9780141439846",
+    "imagen_portada": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=400&h=600&fit=crop",
+    "sinopsis": "La historia del vampiro Conde Drácula y su intento de mudarse de Transilvania a Inglaterra para encontrar nueva sangre.",
+    "categoria": "Terror",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null
+  },
+  {
+    "id": 17,
+    "titulo": "El Alquimista",
+    "autor": "Paulo Coelho",
+    "anio_publicacion": 1988,
+    "isbn13": "9780061122415",
+    "imagen_portada": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=400&h=600&fit=crop",
+    "sinopsis": "Santiago, un joven pastor andaluz, viaja desde su tierra natal hacia el desierto egipcio en busca de un tesoro oculto en las pirámides.",
+    "categoria": "Aventura",
+    "estado": "ALQUILADO",
+    "fecha_devolucion": "2025-11-25",
+    "criticas": [
+      {
+        "usuario": "Marta Delgado",
+        "puntuacion": 5,
+        "comentario": "Un libro inspirador sobre seguir tus sueños. Me cambió la perspectiva de vida.",
+        "fecha": "2025-11-08"
+      },
+      {
+        "usuario": "Andrés Gómez",
+        "puntuacion": 4,
+        "comentario": "Hermoso y motivador, aunque a veces algo simple en su filosofía.",
+        "fecha": "2025-10-25"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "titulo": "Matar a un ruiseñor",
+    "autor": "Harper Lee",
+    "anio_publicacion": 1960,
+    "isbn13": "9780446310789",
+    "imagen_portada": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=600&fit=crop",
+    "sinopsis": "A través de los ojos de la joven Scout Finch, se explora la injusticia racial y la pérdida de la inocencia en el sur de Estados Unidos.",
+    "categoria": "Clásico",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null
+  },
+  {
+    "id": 19,
+    "titulo": "Crónica de una Muerte Anunciada",
+    "autor": "Gabriel García Márquez",
+    "anio_publicacion": 1981,
+    "isbn13": "9780307387349",
+    "imagen_portada": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&h=600&fit=crop",
+    "sinopsis": "La reconstrucción del asesinato de Santiago Nasar. Una fatalidad que todo el pueblo conocía pero nadie impidió.",
+    "categoria": "Ficción",
+    "estado": "DISPONIBLE",
+    "fecha_devolucion": null
+  },
+  {
+    "id": 20,
+    "titulo": "Fundación",
+    "autor": "Isaac Asimov",
+    "anio_publicacion": 1951,
+    "isbn13": "9780553293357",
+    "imagen_portada": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=600&fit=crop",
+    "sinopsis": "Hari Seldon, un psicohistoriador, prevé la caída del Imperio Galáctico y establece la Fundación para preservar el conocimiento humano.",
+    "categoria": "Ciencia Ficción",
+    "estado": "ALQUILADO",
+    "fecha_devolucion": "2025-12-20"
+  }
+]
