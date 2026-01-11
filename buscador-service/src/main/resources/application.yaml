@@ -17,5 +17,6 @@ eureka:
       defaultZone: ${EUREKA_URL}
   instance:
     prefer-ip-address: true
+    hostname: ${RAILWAY_PUBLIC_DOMAIN}
 
 
