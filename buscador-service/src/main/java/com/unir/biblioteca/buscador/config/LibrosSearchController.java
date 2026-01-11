@@ -39,6 +39,7 @@ public class LibrosSearchController {
 
     @GetMapping("/libros")
     public Object buscar(@RequestParam String query) {
+    
         String url = elasticUrl + "/" + elasticIndex + "/_search";
 
         Map<String, Object> body = Map.of(
@@ -50,17 +51,15 @@ public class LibrosSearchController {
                         )
                 )
         );
+        System.out.println("URL usada para Elastic: " + url);
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        headers.setBasicAuth(elasticKey, elasticSecret);
-        headers.setContentType(MediaType.APPLICATION_JSON);
+        //headers.setBasicAuth(elasticKey, elasticSecret);
 
         //String credentials = elasticKey + ":" + elasticSecret;
         //String encoded = Base64.getEncoder().encodeToString(credentials.getBytes(StandardCharsets.UTF_8));
         //headers.set("Authorization", "Basic " + encoded);
-
-
 
         return restTemplate.postForObject(url, new HttpEntity<>(body, headers), Object.class);
     }
