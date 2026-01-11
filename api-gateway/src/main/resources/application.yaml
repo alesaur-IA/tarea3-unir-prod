@@ -10,37 +10,23 @@ spring:
     name: api-gateway
 
   cloud:
-    loadbalancer:
-      health-check:
-        enabled: true
     gateway:
       discovery:
         locator:
           enabled: true
           lower-case-service-id: true
-          use-ws: false
+      default-filters:
+        - RewritePath=/(?<service>.+)/(?<path>.*), /${path}
 
 eureka:
   client:
+    service-url:
+      defaultZone: https://secure-appreciation-production-cf60.up.railway.app/eureka
     register-with-eureka: true
     fetch-registry: true
-    service-url:
-      defaultZone: ${EUREKA_URL}
 
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: false
+    hostname: tarea3-unir-prod-production.up.railway.app
     secure-port-enabled: true
     secure-port: 443
-    metadata-map:
-      public-host: ${RAILWAY_PUBLIC_DOMAIN}
-      public-protocol: https
-      public-port: 443
- 
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: gateway,health,info
-
-
