@@ -28,7 +28,7 @@ spring:
       # fallback para evitar 404 en root
       default-filters:
         - CircuitBreaker=name=default
-        - Retry
+        - Retrys
 
 eureka:
   client:
