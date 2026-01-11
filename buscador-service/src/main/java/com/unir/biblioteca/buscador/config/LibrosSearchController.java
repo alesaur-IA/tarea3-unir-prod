@@ -55,8 +55,8 @@ public class LibrosSearchController {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        //headers.setBasicAuth(elasticKey, elasticSecret);
 
+        //headers.setBasicAuth(elasticKey, elasticSecret);
         //String credentials = elasticKey + ":" + elasticSecret;
         //String encoded = Base64.getEncoder().encodeToString(credentials.getBytes(StandardCharsets.UTF_8));
         //headers.set("Authorization", "Basic " + encoded);
