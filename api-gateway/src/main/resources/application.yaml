@@ -1,7 +1,6 @@
 
 #http://localhost:8761/eureka 
 #http://eureka-server:8761/eureka
-
 server:
   port: ${PORT:0}
 
@@ -15,18 +14,21 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+
+      # No reescribimos path, opción B respeta el path original
       default-filters:
-        - RewritePath=/(?<service>.+)/(?<path>.*), /${path}
+        - CircuitBreaker=name=default
+        - Retry
 
 eureka:
   client:
-    service-url:
-      defaultZone: https://secure-appreciation-production-cf60.up.railway.app/eureka
     register-with-eureka: true
     fetch-registry: true
+    service-url:
+      defaultZone: https://secure-appreciation-production-cf60.up.railway.app/eureka
 
   instance:
-    prefer-ip-address: false
     hostname: tarea3-unir-prod-production.up.railway.app
     secure-port-enabled: true
     secure-port: 443
+    prefer-ip-address: false
