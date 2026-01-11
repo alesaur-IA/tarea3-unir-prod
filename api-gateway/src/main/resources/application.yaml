@@ -31,4 +31,10 @@ spring:
 
 eureka:
   client:
-    enabled: false
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: https://secure-appreciation-production-cf60.up.railway.app/eureka
+  instance:
+      prefer-ip-address: false
+      hostname: tarea3-unir-prod-production.up.railway.app
