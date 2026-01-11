@@ -1,5 +1,5 @@
 server:
-  port: 0   # puerto dinámico (muy recomendado)
+  port: ${PORT:0}   # puerto dinámico (muy recomendado)
 
 spring:
   application:
@@ -8,6 +8,6 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-server:8761/eureka
+      defaultZone: ${EUREKA_URL}
   instance:
     prefer-ip-address: true

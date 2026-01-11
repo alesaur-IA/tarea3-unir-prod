@@ -1,13 +1,14 @@
 server:
-  port: 0   # puerto dinámico (muy recomendado)
+  port: ${PORT:0}   # puerto dinámico (muy recomendado)
 
 spring:
   application:
     name: buscador-service
 #http://localhost:8761/eureka
+#http://eureka-server:8761/eureka
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-server:8761/eureka
+      defaultZone: ${EUREKA_URL}
   instance:
     prefer-ip-address: true
