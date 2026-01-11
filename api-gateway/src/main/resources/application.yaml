@@ -25,10 +25,9 @@ spring:
           filters:
             - StripPrefix=1
 
-      # fallback para evitar 404 en root
-      default-filters:
-        - CircuitBreaker=name=default
-        - Retrys
+#default-filters:
+#  - CircuitBreaker=name=default
+#  - Retry
 
 eureka:
   client:
