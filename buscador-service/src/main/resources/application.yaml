@@ -20,3 +20,9 @@ eureka:
     secure-port-enabled: true
     secure-port: 443
     prefer-ip-address: false
+
+elasticsearch:
+  url: https://bold-beech-1km27sfb.us-east-1.bonsaisearch.net
+  index: libros
+  username: b10e80ad9f
+  password: 077629bad8cb60bb29dc
