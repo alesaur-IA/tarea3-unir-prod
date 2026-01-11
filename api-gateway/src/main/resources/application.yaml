@@ -14,7 +14,7 @@ spring:
         - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials
       routes:
         - id: operador-service
-          uri: http://magnificent-endurance-production-1de6.up.railway.app
+          uri: https://magnificent-endurance-production-1de6.up.railway.app
           predicates:
             - Path=/operador-service/**
           filters:
@@ -25,11 +25,12 @@ spring:
             - SetResponseHeader=Vary, Origin
 
         - id: buscador-service
-          uri: http://creative-trust-production-189b.up.railway.app
+          uri: https://creative-trust-production-189b.up.railway.app
           predicates:
             - Path=/buscador-service/**
           filters:
             - StripPrefix=1
+            - RewriteResponseHeader=Location, /buscador-service/libros/facets, /libros/facets
             - SetResponseHeader=Access-Control-Allow-Origin, https://unir-biblioteca.vercel.app
             - SetResponseHeader=Access-Control-Allow-Credentials, true
             - SetResponseHeader=Access-Control-Allow-Headers, *
