@@ -24,6 +24,19 @@ spring:
             - Path=/buscador-service/**
           filters:
             - StripPrefix=1
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins:
+              - https://unir-biblioteca.vercel.app
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
 
 #default-filters:
 #  - CircuitBreaker=name=default
