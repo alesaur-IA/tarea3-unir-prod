@@ -1,6 +1,5 @@
 package com.unir.biblioteca.buscador.config;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,17 +8,8 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class ElasticConfig {
 
-    @Value("${elasticsearch.username:}")
-    private String username;
-
-    @Value("${elasticsearch.password:}")
-    private String password;
-
     @Bean
     public RestTemplate restTemplate(RestTemplateBuilder builder) {
-        if (username != null && !username.isEmpty()) {
-            return builder.basicAuthentication(username, password).build();
-        }
         return builder.build();
     }
 }
