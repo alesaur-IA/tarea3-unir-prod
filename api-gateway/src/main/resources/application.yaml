@@ -10,12 +10,22 @@ spring:
 
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
+      routes:
+        - id: operador-service
+          uri: https://magnificent-endurance-production-1de6.up.railway.app
+          predicates:
+            - Path=/operador-service/**
+          filters:
+            - StripPrefix=1
 
-      # No reescribimos path, opción B respeta el path original
+        - id: buscador-service
+          uri: https://creative-trust-production-189b.up.railway.app
+          predicates:
+            - Path=/buscador-service/**
+          filters:
+            - StripPrefix=1
+
+      # fallback para evitar 404 en root
       default-filters:
         - CircuitBreaker=name=default
         - Retry
@@ -26,9 +36,3 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: https://secure-appreciation-production-cf60.up.railway.app/eureka
-
-  instance:
-    hostname: tarea3-unir-prod-production.up.railway.app
-    secure-port-enabled: true
-    secure-port: 443
-    prefer-ip-address: false
