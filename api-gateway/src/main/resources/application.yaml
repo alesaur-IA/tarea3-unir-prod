@@ -28,6 +28,10 @@ eureka:
       defaultZone: ${EUREKA_URL}
   instance:
     prefer-ip-address: true
+    hostname: ${RAILWAY_PUBLIC_DOMAIN}
+    non-secure-port: 8080
+    secure-port-enabled: true
+    secure-port: 443
  
 
 management:
@@ -35,3 +39,5 @@ management:
     web:
       exposure:
         include: gateway,health,info
+
+

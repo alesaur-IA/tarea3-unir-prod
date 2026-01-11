@@ -18,5 +18,11 @@ eureka:
   instance:
     prefer-ip-address: true
     hostname: ${RAILWAY_PUBLIC_DOMAIN}
+    non-secure-port: 8080
+    secure-port-enabled: true
+    secure-port: 443
 
 
+
+
+    
