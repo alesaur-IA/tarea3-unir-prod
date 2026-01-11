@@ -25,7 +25,7 @@ spring:
             - SetResponseHeader=Vary, Origin
 
         - id: buscador-service
-          uri: https://creative-trust-production-189b.up.railway.app
+          uri: https://buscador-service-production-a2a7.up.railway.app
           predicates:
             - Path=/buscador-service/**
           filters:

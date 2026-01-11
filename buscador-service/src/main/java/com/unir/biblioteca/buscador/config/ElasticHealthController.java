@@ -17,6 +17,12 @@ public class ElasticHealthController {
     @Value("${elasticsearch.url}")
     private String elasticUrl;
 
+    @Value("${ELASTIC_ACCESS_KEY}")
+    private String elasticKey;
+
+    @Value("${ELASTIC_SECRET}")
+    private String elasticSecret;
+
     public ElasticHealthController(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
