@@ -1,5 +1,7 @@
 package com.unir.biblioteca.buscador.config;
 
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -24,6 +26,13 @@ public class LibrosSearchController {
     @Value("${elasticsearch.index}")
     private String elasticIndex;
 
+    @Value("${ELASTIC_ACCESS_KEY}")
+    private String elasticKey;
+
+    @Value("${ELASTIC_SECRET}")
+    private String elasticSecret;
+
+
     public LibrosSearchController(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
@@ -44,7 +53,13 @@ public class LibrosSearchController {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
+        
+        String credentials = elasticKey + ":" + elasticSecret;
+        String encoded = Base64.getEncoder().encodeToString(credentials.getBytes(StandardCharsets.UTF_8));
 
+        headers.set("Authorization", "Basic " + encoded);
+        headers.set("X-Api-Key", elasticKey);
+        headers.set("X-Api-Secret", elasticSecret);
         return restTemplate.postForObject(url, new HttpEntity<>(body, headers), Object.class);
     }
 }
