@@ -19,6 +19,7 @@ spring:
             - Path=/operador-service/**
           filters:
             - StripPrefix=1
+            - preserveHostHeader=true
             - SetResponseHeader=Access-Control-Allow-Origin, https://unir-biblioteca.vercel.app
             - SetResponseHeader=Access-Control-Allow-Credentials, true
             - SetResponseHeader=Access-Control-Allow-Headers, *
@@ -30,11 +31,13 @@ spring:
             - Path=/buscador-service/**
           filters:
             - StripPrefix=1
-            - RewriteResponseHeader=Location, /buscador-service/libros/facets, /libros/facets
+            - preserveHostHeader=true
             - SetResponseHeader=Access-Control-Allow-Origin, https://unir-biblioteca.vercel.app
             - SetResponseHeader=Access-Control-Allow-Credentials, true
             - SetResponseHeader=Access-Control-Allow-Headers, *
             - SetResponseHeader=Vary, Origin
+
+      
             
       globalcors:
         cors-configurations:
