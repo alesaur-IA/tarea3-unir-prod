@@ -32,7 +32,4 @@ spring:
 
 eureka:
   client:
-    register-with-eureka: true
-    fetch-registry: false
-    service-url:
-      defaultZone: https://secure-appreciation-production-cf60.up.railway.app/eureka
+    enabled: false
