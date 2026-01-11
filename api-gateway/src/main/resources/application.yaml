@@ -10,11 +10,15 @@ spring:
     name: api-gateway
 
   cloud:
+    loadbalancer:
+      health-check:
+        enabled: true
     gateway:
       discovery:
         locator:
           enabled: true
           lower-case-service-id: true
+          use-ws: false
 
 eureka:
   client:
@@ -24,3 +28,9 @@ eureka:
       defaultZone: ${EUREKA_URL}
   instance:
     prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: gateway,health,info
