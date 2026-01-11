@@ -53,13 +53,11 @@ public class LibrosSearchController {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        
+
         String credentials = elasticKey + ":" + elasticSecret;
         String encoded = Base64.getEncoder().encodeToString(credentials.getBytes(StandardCharsets.UTF_8));
 
         headers.set("Authorization", "Basic " + encoded);
-        headers.set("X-Api-Key", elasticKey);
-        headers.set("X-Api-Secret", elasticSecret);
         return restTemplate.postForObject(url, new HttpEntity<>(body, headers), Object.class);
     }
 }
